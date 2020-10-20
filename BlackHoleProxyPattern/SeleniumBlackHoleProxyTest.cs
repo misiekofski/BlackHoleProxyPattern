@@ -23,8 +23,8 @@ namespace BlackHoleProxyPattern
             var blockedUrlSettings = new SetBlockedURLsCommandSettings();
             blockedUrlSettings.Urls = new string[]
             {
-                "http://automationpractice.com/img/p/1/6/16-large_default.jpg", 
-                "http://automationpractice.com/modules/blockbanner/img/sale70.png",
+                "*://*.jpg", 
+                "*://automationpractice.com/modules/blockbanner/img/sale70.png",
             };
 
             session.Network.Enable(new EnableCommandSettings());
